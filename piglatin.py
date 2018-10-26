@@ -1,4 +1,3 @@
-
 def encode(userInput):
 	lstInput = userInput.split()
 	vowel = ("aeiouy")
@@ -10,4 +9,5 @@ def encode(userInput):
 				if lstInput[i][j] in vowel:
 					lstInput[i] = lstInput[i][j:] + lstInput [i][:j] + "ay"
 					break
+	
 	return (" ".join(lstInput)).lower()
